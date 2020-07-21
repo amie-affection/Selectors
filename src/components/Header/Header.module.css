@@ -1,0 +1,16 @@
+.list {
+  list-style: none;
+}
+
+.list a {
+  color: black;
+}
+
+.listItem {
+  height: 25px;
+  font-size: 18px;
+}
+
+.active {
+  background-color: aquamarine;
+}
