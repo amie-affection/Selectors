@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from "react";
+import Modal from "../../components/Modal/Modal";
 
 const ModalPage = () => {
-    return 1;
+  const [isShowModal, changeIsShowModal] = useState(false);
+
+  const showModal = () => changeIsShowModal(true);
+  const closeModal = () => changeIsShowModal(false);
+
+  return (
+    <>
+      <button type="button" onClick={showModal} style={{ marginLeft: "35px" }}>
+        Show Modal
+      </button>
+      {isShowModal && <Modal closeModal={closeModal} />}
+    </>
+  );
 };
 
 export default ModalPage;

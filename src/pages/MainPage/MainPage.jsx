@@ -30,6 +30,7 @@ const MainPage = () => {
           width={300}
           src={myVideo}
           muted={voiceNow}
+          style={{ marginBottom: "10px" }}
         ></video>
       </div>
 
@@ -44,7 +45,7 @@ const MainPage = () => {
       <button type="button" onClick={onPlayVoice}>
         {voiceNow ? "Play Voice" : "Off Voice"}
       </button>
-      
+
       <input
         type="range"
         min="0"
